@@ -1,0 +1,120 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-10-18 10:41:39.384641",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "student_id",
+  "student_name",
+  "book_name",
+  "column_break_qukph",
+  "date",
+  "issue_quantity",
+  "issue",
+  "column_break_xgfcp",
+  "reload",
+  "details",
+  "book_history",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "student_name",
+   "fieldtype": "Data",
+   "label": "Student Name"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "bold": 1,
+   "fieldname": "issue",
+   "fieldtype": "Button",
+   "label": "Issue"
+  },
+  {
+   "fieldname": "book_history",
+   "fieldtype": "Table",
+   "label": "Book History",
+   "options": "Book History"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Library Entry",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "student_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Student Id",
+   "options": "Student",
+   "reqd": 1
+  },
+  {
+   "fieldname": "book_name",
+   "fieldtype": "Link",
+   "label": "Book Name",
+   "options": "Books",
+   "reqd": 1
+  },
+  {
+   "fieldname": "issue_quantity",
+   "fieldtype": "Int",
+   "label": "Issue Quantity"
+  },
+  {
+   "fieldname": "reload",
+   "fieldtype": "Button",
+   "label": "Select"
+  },
+  {
+   "fieldname": "column_break_xgfcp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_qukph",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "details",
+   "fieldtype": "Heading",
+   "label": "Book Details"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-10-27 12:04:21.009140",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Library Entry",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

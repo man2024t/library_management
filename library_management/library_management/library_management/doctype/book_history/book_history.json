@@ -1,0 +1,82 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-10-18 10:49:37.384717",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "book_name",
+  "issue_date",
+  "issue_quantity",
+  "return_quantity",
+  "author",
+  "publisher",
+  "return",
+  "library_transactions"
+ ],
+ "fields": [
+  {
+   "fieldname": "return",
+   "fieldtype": "Button",
+   "in_list_view": 1,
+   "label": "Return"
+  },
+  {
+   "fieldname": "library_transactions",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Library Transactions",
+   "options": "Library Transactions"
+  },
+  {
+   "fieldname": "book_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Book Name",
+   "options": "Books"
+  },
+  {
+   "fieldname": "author",
+   "fieldtype": "Data",
+   "label": "Author"
+  },
+  {
+   "fieldname": "publisher",
+   "fieldtype": "Data",
+   "label": "Publisher"
+  },
+  {
+   "fieldname": "issue_quantity",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Issue Quantity"
+  },
+  {
+   "fieldname": "issue_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Issue Date"
+  },
+  {
+   "fieldname": "return_quantity",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Return Quantity"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-10-25 16:10:42.073524",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Book History",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
